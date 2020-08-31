@@ -125,19 +125,19 @@ export default ${2:componentName};
 ### useState
 
 ```javascript
-    const [${1:state}, ${2:setState}] = useState(${3:defaultValue});
+const [${1:state}, ${2:setState}] = useState(${3:defaultValue});
 ```
 
 ### useReducer
 
 ```javascript
-    const [state, dispatch] = useReducer(${1:reducer}, ${2:defaultValue}, ${3:init});
+const [state, dispatch] = useReducer(${1:reducer}, ${2:defaultValue}, ${3:init});
 ```
 
 ### useContext
 
 ```javascript
-    const ${1:value} = useContext(${2:context});
+const ${1:value} = useContext(${2:context});
 ```
 
 ### useRef
@@ -149,20 +149,20 @@ const ${1:refName} = useRef(${3:defaultValue});
 ### useImperativeHandle
 
 ```javascript
-    useImperativeHandle(${1:refName}, () => ({
-        ${2:handles}
-    }), [${3:dependencies}]);
+useImperativeHandle(${1:refName}, () => ({
+    ${2:handles}
+}), [${3:dependencies}]);
 ```
 
 ### useEffect
 
 ```javascript
-     useEffect(() => {
-        ${1:effect}
-        return () => {
-            ${2:clear effect}
-        }
-    }, [${3:dependencies}];
+useEffect(() => {
+    ${1:effect}
+    return () => {
+        ${2:clear effect}
+    }
+}, [${3:dependencies}];
 ```
 
 ### useLayoutEffect
@@ -179,19 +179,19 @@ const ${1:refName} = useRef(${3:defaultValue});
 ### useCallback
 
 ```javascript
-    const ${1:functionName} = useCallback(() => {
-        ${2:callback}
-    }, [${3:dependencies}]);
+const ${1:functionName} = useCallback(() => {
+    ${2:callback}
+}, [${3:dependencies}]);
 ```
 
 ### useMemo
 
 ```javascript
-    const ${1:memoName} = useMemo(() => ${2:ReactNodeName}, [${3:dependencies}]);
+const ${1:memoName} = useMemo(() => ${2:ReactNodeName}, [${3:dependencies}]);
 ```
 
 ### useDebugValue
 
 ```javascript
-    useDebugValue(${1:value});
+useDebugValue(${1:value});
 ```
