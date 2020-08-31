@@ -54,7 +54,7 @@
             }
         ]
     },
-    "icon": "./assets/React-icon.png",
+    "icon": "assets/React-icon.png",
     "scripts": {
         "pub:major": "npx vsce publish major",
         "pub:minor": "npx vsce publish minor",
