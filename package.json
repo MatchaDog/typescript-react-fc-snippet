@@ -1,0 +1,66 @@
+{
+    "name": "typescript-react-fc-snippet",
+    "displayName": "Typescript-React-FC-Snippet",
+    "description": "Snippet for function component in react by typescript",
+    "keywords": [
+        "snippets",
+        "react",
+        "javascript",
+        "typescript",
+        "hooks",
+        "function component"
+    ],
+    "license": "MIT",
+    "version": "0.0.1",
+    "publisher": "Hans",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MatchaDog/typescript-react-fc-snippet.git"
+    },
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "extensionKind": [
+        "ui"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/ts-snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/ts-snippets.json"
+            }
+        ]
+    },
+    "icon": "./assets/React-icon.png",
+    "scripts": {
+        "pub:major": "npx vsce publish major",
+        "pub:minor": "npx vsce publish minor",
+        "pub:patch": "npx vsce publish patch"
+    },
+    "dependencies": {
+        "vsce": "^1.79.4"
+    }
+}

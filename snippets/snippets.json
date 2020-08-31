@@ -1,0 +1,257 @@
+{
+    "console log": {
+        "prefix": "clg",
+        "body": ["console.log($1);", "$0"],
+        "description": "console.log"
+    },
+    "console table": {
+        "prefix": "ctb",
+        "body": ["console.table($1);", "$0"],
+        "description": "console.tab"
+    },
+    "console error": {
+        "prefix": "cer",
+        "body": ["console.error(\"$1\");", "$0"],
+        "description": "console.error"
+    },
+    "console time": {
+        "prefix": "ctm",
+        "body": ["console.time();", "$0"],
+        "description": "console.time"
+    },
+    "console timeEnd": {
+        "prefix": "ctme",
+        "body": ["console.timeEnd();", "$0"],
+        "description": "console.timeEnd"
+    },
+    "console trace": {
+        "prefix": "cte",
+        "body": ["console.trace();", "$0"],
+        "description": "console.trace"
+    },
+    "console warn": {
+        "prefix": "cwn",
+        "body": ["console.warn(\"$1\");", "$0"],
+        "description": "console.warn"
+    },
+    "console assert": {
+        "prefix": "cat",
+        "body": ["console.assert($1);", "$0"],
+        "description": "console.assert"
+    },
+    "console clear": {
+        "prefix": "ccl",
+        "body": ["console.clear();", "$0"],
+        "description": "console.clear"
+    },
+    "console count": {
+        "prefix": "cct",
+        "body": ["console.count($1);", "$0"],
+        "description": "console.count"
+    },
+    "console group": {
+        "prefix": "cgp",
+        "body": ["console.group($1);", "$0"],
+        "description": "console.group"
+    },
+    "console groupEnd": {
+        "prefix": "cge",
+        "body": ["console.groupEnd();", "$0"],
+        "description": "console.groupEnd"
+    },
+    "console info": {
+        "prefix": "cio",
+        "body": ["console.info(\"$1\");", "$0"],
+        "description": "console.info"
+    },
+    "console dir": {
+        "prefix": "cdr",
+        "body": ["console.dir();", "$0"],
+        "description": "console.dir"
+    },
+
+    "destructuring assignment array": {
+        "prefix": "cda",
+        "body": ["const [${2:propertyName}] = ${1:array};"],
+        "description": "destructuring assignment array"
+    },
+    "destructuring assignment object": {
+        "prefix": "cdo",
+        "body": ["const {${2:propertyName}} = ${1:object};"],
+        "description": "destructuring assignment object"
+    },
+    "add comments": {
+        "prefix": "cmt",
+        "body": ["/**", "${1:yourComments}", "*/"],
+        "description": "add some comments"
+    },
+    "add function comments": {
+        "prefix": "cmtf",
+        "body": [
+            "/**",
+            " * @description: ${1:description}",
+            " * @param {${2:paramType}}",
+            " * @return {${3:returnType}}",
+            "*/"
+        ],
+        "description": "add some comments for function"
+    },
+
+    "import module": {
+        "prefix": "im",
+        "body": ["import \"${1:module}\";", "$0"],
+        "description": "import module"
+    },
+    "import destructured module": {
+        "prefix": "imd",
+        "body": [
+            "import { ${2:destructuredModule} } from \"${1:module}\";",
+            "$0"
+        ],
+        "description": "import destructuredModule"
+    },
+    "import module as alias": {
+        "prefix": "ima",
+        "body": ["import * as ${2:alias} from \"${1:module}\";", "$0"],
+        "description": "import module as alias"
+    },
+    "import destructured module as alias": {
+        "prefix": "imda",
+        "body": ["import { * as ${2:alias} } from \"${1:module}\";", "$0"],
+        "description": "import destructuredModule as alias"
+    },
+    "export default module": {
+        "prefix": "edm",
+        "body": ["export default ${1:module};"],
+        "description": "export default module"
+    },
+    "export modules": {
+        "prefix": "ems",
+        "body": ["export {${1:module}};"],
+        "description": "export modules"
+    },
+
+    "import and export in index file": {
+        "prefix": "idxn",
+        "body": [
+            "import ${2:moduleName} from \"${1:pathName}\";",
+            "export default ${3:moduleName};"
+        ],
+        "description": "import and export in index file"
+    },
+
+    "import react": {
+        "prefix": "imr",
+        "body": ["import React from \"react\";", "$0"],
+        "description": "import react"
+    },
+    "import react, useState": {
+        "prefix": "imrs",
+        "body": ["import React, { useState } from \"react\";", "$0"],
+        "description": "import react, useState"
+    },
+    "create function component": {
+        "prefix": "cfc",
+        "body": [
+            "import react from \"react\";",
+            "",
+            "const ${1:componentName} = () => {",
+            "\treturn <div></div>;",
+            "};",
+            "",
+            "export default ${2:componentName};"
+        ],
+        "description": "create function component"
+    },
+    "create export function component": {
+        "prefix": "cefc",
+        "body": [
+            "import react from \"react\";",
+            "",
+            "export const ${1:componentName} = () => {",
+            "\treturn <div></div>;",
+            "};",
+            "$0"
+        ],
+        "description": "create export function component"
+    },
+
+    "useState": {
+        "prefix": "useState",
+        "body": [
+            "const [${1:state}, ${2:setState}] = useState(${3:defaultValue});"
+        ],
+        "description": "useState"
+    },
+    "useReducer": {
+        "prefix": "useReducer",
+        "body": [
+            "const [state, dispatch] = useReducer(${1:reducer}, ${2:defaultValue}, ${3:init});"
+        ],
+        "description": "useReducer"
+    },
+    "useContext": {
+        "prefix": "useContext",
+        "body": ["const ${1:value} = useContext(${2:context});"],
+        "description": "useContext"
+    },
+    "useRef": {
+        "prefix": "useRef",
+        "body": ["const ${1:refName} = useRef(${3:defaultValue});"],
+        "description": "useRef"
+    },
+    "useImperativeHandle": {
+        "prefix": "useImperativeHandle",
+        "body": [
+            "useImperativeHandle(${1:refName}, () => ({",
+            "\t${2:handles}",
+            "}), [${3:dependencies}]);"
+        ],
+        "description": "useImperativeHandle"
+    },
+    "useEffect": {
+        "prefix": "useEffect",
+        "body": [
+            "useEffect(() => {",
+            "\t${1:effect}",
+            "\treturn () => {",
+            "\t\t${2:clear effect}",
+            "\t}",
+            "}, [${3:dependencies}];"
+        ],
+        "description": "useState"
+    },
+    "useLayoutEffect": {
+        "prefix": "useLayoutEffect",
+        "body": [
+            "useLayoutEffect(() => {",
+            "\t${1:effect}",
+            "\treturn () => {",
+            "\t\t${2:clear effect}",
+            "\t}",
+            "}, [${3:dependencies}];"
+        ],
+        "description": "useLayoutEffect"
+    },
+    "useCallback": {
+        "prefix": "useCallback",
+        "body": [
+            "const ${1:functionName} = useCallback(() => {",
+            "\t${2:callback}",
+            "}, [${3:dependencies}]);"
+        ],
+        "description": "useCallback"
+    },
+    "useMemo": {
+        "prefix": "useMemo",
+        "body": [
+            "const ${1:memoName} = useMemo(() => ${2:ReactNodeName}, [${3:dependencies}]);"
+        ],
+        "description": "useMemo"
+    },
+    "useDebugValue": {
+        "prefix": "useDebugValue",
+        "body": ["useDebugValue(${1:value});"],
+        "description": "useDebugValue"
+    }
+}

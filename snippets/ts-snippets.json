@@ -1,0 +1,42 @@
+{
+    "Print to import react and FC": {
+        "prefix": "tsimr",
+        "body": ["import React, { FC } from \"react\";", "$0"],
+        "description": "typescript import react"
+    },
+    "create base typescript react functional component": {
+        "prefix": "tscfc",
+        "body": [
+            "import React, { FC } from \"react\";",
+            "",
+            "interface IProps {};",
+            "",
+            "const ${1:componentName}:FC<IProps> = (props) => {",
+            "\treturn <div>${3}</div>",
+            "};",
+            "",
+            "export default ${2:componentName};"
+        ],
+        "description": "typescript creat function component"
+    },
+    "create base typescript react functional component support ref": {
+        "prefix": "tscfrc",
+        "body": [
+            "import React, { ForwardRefRenderFunction, useImperativeHandle } from \"react\";",
+            "",
+            "interface IProps {};",
+            "",
+            "interface IHandles {};",
+            "",
+            "const ${1:componentName}:ForwardRefRenderFunction<IHandles, IProps> = (props, ref) => {",
+            "\tuseImperativeHandle(ref, () => ({",
+            "\t\t${3:handles}",
+            "\t}), [${4:dependencies}]);",
+            "\treturn <div></div>;",
+            "};",
+            "",
+            "export default ${2:componentName};"
+        ],
+        "description": "typescript create ForwardRefRenderFunction component"
+    }
+}
