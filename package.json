@@ -11,7 +11,7 @@
         "function component"
     ],
     "license": "MIT",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "publisher": "Hans",
     "repository": {
         "type": "git",
@@ -56,6 +56,7 @@
     },
     "icon": "assets/React-icon.png",
     "scripts": {
+        "build": "npx vsce package",
         "pub:major": "npx vsce publish major",
         "pub:minor": "npx vsce publish minor",
         "pub:patch": "npx vsce publish patch"
