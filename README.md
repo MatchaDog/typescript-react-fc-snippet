@@ -120,6 +120,33 @@ const ${1:componentName}:ForwardRefRenderFunction<IHandles, IProps> = (props, re
 };
 export default ${2:componentName};
 ```
+
+## for test
+
+### jest describe
+
+```javascript
+describe(($1) => {
+    $2;
+});
+```
+
+### jest snapshot
+
+```javascript
+it(($1) => {
+    $2;
+});
+```
+
+### jest test
+
+```javascript
+test(("should $1") => {
+    $2;
+});
+```
+
 ## for hooks
 
 ### useState
@@ -168,12 +195,12 @@ useEffect(() => {
 ### useLayoutEffect
 
 ```javascript
-    useLayoutEffect(() => {
-        ${1:effect}
-        return () => {
-            ${2:clear effect}
-        }
-    }, [${3:dependencies}];
+useLayoutEffect(() => {
+    ${1:effect}
+    return () => {
+        ${2:clear effect}
+    }
+}, [${3:dependencies}];
 ```
 
 ### useCallback
