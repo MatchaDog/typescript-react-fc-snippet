@@ -1,316 +1,313 @@
 {
-    "console log": {
-        "prefix": "clg",
-        "body": ["console.log($1);"],
-        "description": "console.log"
-    },
-    "console table": {
-        "prefix": "ctb",
-        "body": ["console.table($1);"],
-        "description": "console.tab"
-    },
-    "console error": {
-        "prefix": "cer",
-        "body": ["console.error(\"$1\");"],
-        "description": "console.error"
-    },
-    "console time": {
-        "prefix": "ctm",
-        "body": ["console.time();"],
-        "description": "console.time"
-    },
-    "console timeEnd": {
-        "prefix": "ctme",
-        "body": ["console.timeEnd();"],
-        "description": "console.timeEnd"
-    },
-    "console trace": {
-        "prefix": "cte",
-        "body": ["console.trace();"],
-        "description": "console.trace"
-    },
-    "console warn": {
-        "prefix": "cwn",
-        "body": ["console.warn(\"$1\");"],
-        "description": "console.warn"
-    },
-    "console assert": {
-        "prefix": "cat",
-        "body": ["console.assert($1);"],
-        "description": "console.assert"
-    },
-    "console clear": {
-        "prefix": "ccl",
-        "body": ["console.clear();"],
-        "description": "console.clear"
-    },
-    "console count": {
-        "prefix": "cct",
-        "body": ["console.count($1);"],
-        "description": "console.count"
-    },
-    "console group": {
-        "prefix": "cgp",
-        "body": ["console.group($1);"],
-        "description": "console.group"
-    },
-    "console groupEnd": {
-        "prefix": "cge",
-        "body": ["console.groupEnd();"],
-        "description": "console.groupEnd"
-    },
-    "console info": {
-        "prefix": "cio",
-        "body": ["console.info(\"$1\");"],
-        "description": "console.info"
-    },
-    "console dir": {
-        "prefix": "cdr",
-        "body": ["console.dir();"],
-        "description": "console.dir"
-    },
+	"console log": {
+		"prefix": "clg",
+		"body": ["console.log($1);"],
+		"description": "console.log"
+	},
+	"console table": {
+		"prefix": "ctb",
+		"body": ["console.table($1);"],
+		"description": "console.tab"
+	},
+	"console error": {
+		"prefix": "cer",
+		"body": ["console.error(\"$1\");"],
+		"description": "console.error"
+	},
+	"console time": {
+		"prefix": "ctm",
+		"body": ["console.time();"],
+		"description": "console.time"
+	},
+	"console timeEnd": {
+		"prefix": "ctme",
+		"body": ["console.timeEnd();"],
+		"description": "console.timeEnd"
+	},
+	"console trace": {
+		"prefix": "cte",
+		"body": ["console.trace();"],
+		"description": "console.trace"
+	},
+	"console warn": {
+		"prefix": "cwn",
+		"body": ["console.warn(\"$1\");"],
+		"description": "console.warn"
+	},
+	"console assert": {
+		"prefix": "cat",
+		"body": ["console.assert($1);"],
+		"description": "console.assert"
+	},
+	"console clear": {
+		"prefix": "ccl",
+		"body": ["console.clear();"],
+		"description": "console.clear"
+	},
+	"console count": {
+		"prefix": "cct",
+		"body": ["console.count($1);"],
+		"description": "console.count"
+	},
+	"console group": {
+		"prefix": "cgp",
+		"body": ["console.group($1);"],
+		"description": "console.group"
+	},
+	"console groupEnd": {
+		"prefix": "cge",
+		"body": ["console.groupEnd();"],
+		"description": "console.groupEnd"
+	},
+	"console info": {
+		"prefix": "cio",
+		"body": ["console.info(\"$1\");"],
+		"description": "console.info"
+	},
+	"console dir": {
+		"prefix": "cdr",
+		"body": ["console.dir();"],
+		"description": "console.dir"
+	},
 
-    "destructuring assignment array": {
-        "prefix": "cda",
-        "body": ["const [${2:propertyName}] = ${1:array};"],
-        "description": "destructuring assignment array"
-    },
-    "destructuring assignment object": {
-        "prefix": "cdo",
-        "body": ["const {${2:propertyName}} = ${1:object};"],
-        "description": "destructuring assignment object"
-    },
-    "add comments": {
-        "prefix": "cmt",
-        "body": ["/**", "${1:yourComments}", "*/"],
-        "description": "add some comments"
-    },
-    "add function comments": {
-        "prefix": "cmtf",
-        "body": [
-            "/**",
-            " * @description: ${1:description}",
-            " * @param {${2:paramType}}",
-            " * @return {${3:returnType}}",
-            "*/"
-        ],
-        "description": "add some comments for function"
-    },
-    "add doge comments": {
-        "prefix": "cmtdog",
-        "body": [
-            "/**              ii.                                         ;9ABH,           */",
-            "/**             SA391,                                    .r9GG35&G           */",
-            "/**             &#ii13Gh;                               i3X31i;:,rB1          */",
-            "/**             iMs,:,i5895,                         .5G91:,:;:s1:8A          */",
-            "/**              33::::,,;5G5,                     ,58Si,,:::,sHX;iH1         */",
-            "/**               Sr.,:;rs13BBX35hh11511h5Shhh5S3GAXS:.,,::,,1AG3i,GG         */",
-            "/**               .G51S511sr;;iiiishS8G89Shsrrsh59S;.,,,,,..5A85Si,h8         */",
-            "/**              :SB9s:,............................,,,.,,,SASh53h,1G.        */",
-            "/**           .r18S;..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,....,,.1H315199,rX,        */",
-            "/**         ;S89s,..,,,,,,,,,,,,,,,,,,,,,,,....,,.......,,,;r1ShS8,;Xi        */",
-            "/**       i55s:.........,,,,,,,,,,,,,,,,.,,,......,.....,,....r9&5.:X1        */",
-            "/**      59;.....,.     .,,,,,,,,,,,...        .............,..:1;.:&s        */",
-            "/**     s8,..;53S5S3s.   .,,,,,,,.,..      i15S5h1:.........,,,..,,:99        */",
-            "/**     93.:39s:rSGB@A;  ..,,,,.....    .SG3hhh9G&BGi..,,,,,,,,,,,,.,83       */",
-            "/**     G5.G8  9#@@@@@X. .,,,,,,.....  iA9,.S&B###@@Mr...,,,,,,,,..,.;Xh      */",
-            "/**     Gs.X8 S@@@@@@@B:..,,,,,,,,,,. rA1 ,A@@@@@@@@@H:........,,,,,,.iX:     */",
-            "/**    ;9. ,8A#@@@@@@#5,.,,,,,,,,,... 9A. 8@@@@@@@@@@M;    ....,,,,,,,,S8     */",
-            "/**    X3    iS8XAHH8s.,,,,,,,,,,...,..58hH@@@@@@@@@Hs       ...,,,,,,,:Gs    */",
-            "/**   r8,        ,,,...,,,,,,,,,,.....  ,h8XABMMHX3r.          .,,,,,,,.rX:   */",
-            "/**  :9, .    .:,..,:;;;::,.,,,,,..          .,,.               ..,,,,,,.59   */",
-            "/** .Si      ,:.i8HBMMMMMB&5,....                    .            .,,,,,.sMr  */",
-            "/** SS       :: h@@@@@@@@@@#; .                     ...  .         ..,,,,iM5  */",
-            "/** 91  .    ;:.,1&@@@@@@MXs.                            .          .,,:,:&S  */",
-            "/** hS ....  .:;,,,i3MMS1;..,..... .  .     ...                     ..,:,.99  */",
-            "/** ,8; ..... .,:,..,8Ms:;,,,...                                     .,::.83  */",
-            "/**  s&: ....  .sS553B@@HX3s;,.    .,;13h.                            .:::&1  */",
-            "/**   SXr  .  ...;s3G99XA&X88Shss11155hi.                             ,;:h&,  */",
-            "/**    iH8:  . ..   ,;iiii;,::,,,,,.                                 .;irHA   */",
-            "/**     ,8X5;   .     .......                                       ,;iihS8Gi */",
-            "/**        1831,                                                 .,;irrrrrs&@ */",
-            "/**          ;5A8r.                                            .:;iiiiirrss1H */",
-            "/**            :X@H3s.......                                .,:;iii;iiiiirsrh */",
-            "/**             r#h:;,...,,.. .,,:;;;;;:::,...              .:;;;;;;iiiirrss1 */",
-            "/**            ,M8 ..,....,.....,,::::::,,...         .     .,;;;iiiiiirss11h */",
-            "/**            8B;.,,,,,,,.,.....          .           ..   .:;;;;iirrsss111h */",
-            "/**           i@5,:::,,,,,,,,.... .                   . .:::;;;;;irrrss111111 */",
-            "/**           9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111 */"
-        ],
-        "description": "add a dog comments"
-    },
+	"destructuring assignment array": {
+		"prefix": "cda",
+		"body": ["const [${2:propertyName}] = ${1:array};"],
+		"description": "destructuring assignment array"
+	},
+	"destructuring assignment object": {
+		"prefix": "cdo",
+		"body": ["const {${2:propertyName}} = ${1:object};"],
+		"description": "destructuring assignment object"
+	},
+	"add comments": {
+		"prefix": "cmt",
+		"body": ["/**", "${1:yourComments}", "*/"],
+		"description": "add some comments"
+	},
+	"add function comments": {
+		"prefix": "cmtf",
+		"body": [
+			"/**",
+			" * @description: ${1:description}",
+			" * @param {${2:paramType}}",
+			" * @return {${3:returnType}}",
+			"*/"
+		],
+		"description": "add some comments for function"
+	},
+	"add doge comments": {
+		"prefix": "cmtdog",
+		"body": [
+			"/**              ii.                                         ;9ABH,           */",
+			"/**             SA391,                                    .r9GG35&G           */",
+			"/**             &#ii13Gh;                               i3X31i;:,rB1          */",
+			"/**             iMs,:,i5895,                         .5G91:,:;:s1:8A          */",
+			"/**              33::::,,;5G5,                     ,58Si,,:::,sHX;iH1         */",
+			"/**               Sr.,:;rs13BBX35hh11511h5Shhh5S3GAXS:.,,::,,1AG3i,GG         */",
+			"/**               .G51S511sr;;iiiishS8G89Shsrrsh59S;.,,,,,..5A85Si,h8         */",
+			"/**              :SB9s:,............................,,,.,,,SASh53h,1G.        */",
+			"/**           .r18S;..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,....,,.1H315199,rX,        */",
+			"/**         ;S89s,..,,,,,,,,,,,,,,,,,,,,,,,....,,.......,,,;r1ShS8,;Xi        */",
+			"/**       i55s:.........,,,,,,,,,,,,,,,,.,,,......,.....,,....r9&5.:X1        */",
+			"/**      59;.....,.     .,,,,,,,,,,,...        .............,..:1;.:&s        */",
+			"/**     s8,..;53S5S3s.   .,,,,,,,.,..      i15S5h1:.........,,,..,,:99        */",
+			"/**     93.:39s:rSGB@A;  ..,,,,.....    .SG3hhh9G&BGi..,,,,,,,,,,,,.,83       */",
+			"/**     G5.G8  9#@@@@@X. .,,,,,,.....  iA9,.S&B###@@Mr...,,,,,,,,..,.;Xh      */",
+			"/**     Gs.X8 S@@@@@@@B:..,,,,,,,,,,. rA1 ,A@@@@@@@@@H:........,,,,,,.iX:     */",
+			"/**    ;9. ,8A#@@@@@@#5,.,,,,,,,,,... 9A. 8@@@@@@@@@@M;    ....,,,,,,,,S8     */",
+			"/**    X3    iS8XAHH8s.,,,,,,,,,,...,..58hH@@@@@@@@@Hs       ...,,,,,,,:Gs    */",
+			"/**   r8,        ,,,...,,,,,,,,,,.....  ,h8XABMMHX3r.          .,,,,,,,.rX:   */",
+			"/**  :9, .    .:,..,:;;;::,.,,,,,..          .,,.               ..,,,,,,.59   */",
+			"/** .Si      ,:.i8HBMMMMMB&5,....                    .            .,,,,,.sMr  */",
+			"/** SS       :: h@@@@@@@@@@#; .                     ...  .         ..,,,,iM5  */",
+			"/** 91  .    ;:.,1&@@@@@@MXs.                            .          .,,:,:&S  */",
+			"/** hS ....  .:;,,,i3MMS1;..,..... .  .     ...                     ..,:,.99  */",
+			"/** ,8; ..... .,:,..,8Ms:;,,,...                                     .,::.83  */",
+			"/**  s&: ....  .sS553B@@HX3s;,.    .,;13h.                            .:::&1  */",
+			"/**   SXr  .  ...;s3G99XA&X88Shss11155hi.                             ,;:h&,  */",
+			"/**    iH8:  . ..   ,;iiii;,::,,,,,.                                 .;irHA   */",
+			"/**     ,8X5;   .     .......                                       ,;iihS8Gi */",
+			"/**        1831,                                                 .,;irrrrrs&@ */",
+			"/**          ;5A8r.                                            .:;iiiiirrss1H */",
+			"/**            :X@H3s.......                                .,:;iii;iiiiirsrh */",
+			"/**             r#h:;,...,,.. .,,:;;;;;:::,...              .:;;;;;;iiiirrss1 */",
+			"/**            ,M8 ..,....,.....,,::::::,,...         .     .,;;;iiiiiirss11h */",
+			"/**            8B;.,,,,,,,.,.....          .           ..   .:;;;;iirrsss111h */",
+			"/**           i@5,:::,,,,,,,,.... .                   . .:::;;;;;irrrss111111 */",
+			"/**           9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111 */"
+		],
+		"description": "add a dog comments"
+	},
 
-    "import module": {
-        "prefix": "im",
-        "body": ["import \"${1:module}\";", "$0"],
-        "description": "import module"
-    },
-    "import destructured module": {
-        "prefix": "imd",
-        "body": [
-            "import { ${2:destructuredModule} } from \"${1:module}\";",
-            "$0"
-        ],
-        "description": "import destructuredModule"
-    },
-    "import module as alias": {
-        "prefix": "ima",
-        "body": ["import * as ${2:alias} from \"${1:module}\";", "$0"],
-        "description": "import module as alias"
-    },
-    "import destructured module as alias": {
-        "prefix": "imda",
-        "body": ["import { * as ${2:alias} } from \"${1:module}\";", "$0"],
-        "description": "import destructuredModule as alias"
-    },
-    "export default module": {
-        "prefix": "edm",
-        "body": ["export default ${1:module};"],
-        "description": "export default module"
-    },
-    "export modules": {
-        "prefix": "ems",
-        "body": ["export {${1:module}};"],
-        "description": "export modules"
-    },
+	"import module": {
+		"prefix": "im",
+		"body": ["import \"${1:module}\";", "$0"],
+		"description": "import module"
+	},
+	"import destructured module": {
+		"prefix": "imd",
+		"body": ["import { ${2:destructuredModule} } from \"${1:module}\";", "$0"],
+		"description": "import destructuredModule"
+	},
+	"import module as alias": {
+		"prefix": "ima",
+		"body": ["import * as ${2:alias} from \"${1:module}\";", "$0"],
+		"description": "import module as alias"
+	},
+	"import destructured module as alias": {
+		"prefix": "imda",
+		"body": ["import { * as ${2:alias} } from \"${1:module}\";", "$0"],
+		"description": "import destructuredModule as alias"
+	},
+	"export default module": {
+		"prefix": "edm",
+		"body": ["export default ${1:module};"],
+		"description": "export default module"
+	},
+	"export modules": {
+		"prefix": "ems",
+		"body": ["export {${1:module}};"],
+		"description": "export modules"
+	},
 
-    "import and export in index file": {
-        "prefix": "idxn",
-        "body": [
-            "import ${2:moduleName} from \"${1:pathName}\";",
-            "export default ${3:moduleName};"
-        ],
-        "description": "import and export in index file"
-    },
+	"import and export in index file": {
+		"prefix": "idxn",
+		"body": [
+			"import ${2:moduleName} from \"${1:pathName}\";",
+			"export default ${3:moduleName};"
+		],
+		"description": "import and export in index file"
+	},
 
-    "import react": {
-        "prefix": "imr",
-        "body": ["import React from \"react\";", "$0"],
-        "description": "import react"
-    },
-    "import react, useState": {
-        "prefix": "imrs",
-        "body": ["import React, { useState } from \"react\";", "$0"],
-        "description": "import react, useState"
-    },
-    "create function component": {
-        "prefix": "cfc",
-        "body": [
-            "import react from \"react\";",
-            "",
-            "const ${1:componentName} = () => {",
-            "\treturn <div></div>;",
-            "};",
-            "",
-            "export default ${2:componentName};"
-        ],
-        "description": "create function component"
-    },
-    "create export function component": {
-        "prefix": "cefc",
-        "body": [
-            "import react from \"react\";",
-            "",
-            "export const ${1:componentName} = () => {",
-            "\treturn <div></div>;",
-            "};",
-            "$0"
-        ],
-        "description": "create export function component"
-    },
+	"import react": {
+		"prefix": "imr",
+		"body": ["import React from \"react\";", "$0"],
+		"description": "import react"
+	},
+	"import react, useState": {
+		"prefix": "imrs",
+		"body": ["import React, { useState } from \"react\";", "$0"],
+		"description": "import react, useState"
+	},
+	"create function component": {
+		"prefix": "cfc",
+		"body": [
+			"import react from \"react\";",
+			"",
+			"const ${1:componentName} = () => {",
+			"\treturn <div></div>;",
+			"};",
+			"",
+			"export default ${2:componentName};"
+		],
+		"description": "create function component"
+	},
+	"create export function component": {
+		"prefix": "cefc",
+		"body": [
+			"import react from \"react\";",
+			"",
+			"export const ${1:componentName} = () => {",
+			"\treturn <div></div>;",
+			"};",
+			"$0"
+		],
+		"description": "create export function component"
+	},
 
-    "test": {
-        "prefix": "test",
-        "body": ["test(\"should $1\", () => {", "$2", "})"],
-        "description": "jest test"
-    },
-    "desc": {
-        "prefix": "tdesc",
-        "body": ["describe(\"$1\", () => {", "$2", "})"],
-        "description": "jest describe"
-    },
-    "it": {
-        "prefix": "tit",
-        "body": ["it(\"$1\", () => {", "$2", "})"],
-        "description": "jest snapshot"
-    },
+	"test": {
+		"prefix": "test",
+		"body": ["test(\"should $1\", () => {", "$2", "})"],
+		"description": "jest test"
+	},
+	"desc": {
+		"prefix": "tdesc",
+		"body": ["describe(\"$1\", () => {", "$2", "})"],
+		"description": "jest describe"
+	},
+	"it": {
+		"prefix": "tit",
+		"body": ["it(\"$1\", () => {", "$2", "})"],
+		"description": "jest snapshot"
+	},
 
-    "useState": {
-        "prefix": "useState",
-        "body": [
-            "const [${1:state}, ${2:setState}] = useState(${3:defaultValue});"
-        ],
-        "description": "useState"
-    },
-    "useReducer": {
-        "prefix": "useReducer",
-        "body": [
-            "const [state, dispatch] = useReducer(${1:reducer}, ${2:defaultValue}, ${3:init});"
-        ],
-        "description": "useReducer"
-    },
-    "useContext": {
-        "prefix": "useContext",
-        "body": ["const ${1:value} = useContext(${2:context});"],
-        "description": "useContext"
-    },
-    "useRef": {
-        "prefix": "useRef",
-        "body": ["const ${1:refName} = useRef(${3:defaultValue});"],
-        "description": "useRef"
-    },
-    "useImperativeHandle": {
-        "prefix": "useImperativeHandle",
-        "body": [
-            "useImperativeHandle(${1:refName}, () => ({",
-            "\t${2:handles}",
-            "}), [${3:dependencies}]);"
-        ],
-        "description": "useImperativeHandle"
-    },
-    "useEffect": {
-        "prefix": "useEffect",
-        "body": [
-            "useEffect(() => {",
-            "\t${1:effect}",
-            "\treturn () => {",
-            "\t\t${2:clear effect}",
-            "\t}",
-            "}, [${3:dependencies}];"
-        ],
-        "description": "useState"
-    },
-    "useLayoutEffect": {
-        "prefix": "useLayoutEffect",
-        "body": [
-            "useLayoutEffect(() => {",
-            "\t${1:effect}",
-            "\treturn () => {",
-            "\t\t${2:clear effect}",
-            "\t}",
-            "}, [${3:dependencies}];"
-        ],
-        "description": "useLayoutEffect"
-    },
-    "useCallback": {
-        "prefix": "useCallback",
-        "body": [
-            "const ${1:functionName} = useCallback(() => {",
-            "\t${2:callback}",
-            "}, [${3:dependencies}]);"
-        ],
-        "description": "useCallback"
-    },
-    "useMemo": {
-        "prefix": "useMemo",
-        "body": [
-            "const ${1:memoName} = useMemo(() => ${2:ReactNodeName}, [${3:dependencies}]);"
-        ],
-        "description": "useMemo"
-    },
-    "useDebugValue": {
-        "prefix": "useDebugValue",
-        "body": ["useDebugValue(${1:value});"],
-        "description": "useDebugValue"
-    }
+	"useState": {
+		"prefix": "useState",
+		"body": [
+			"const [${1:state}, ${2:setState}] = useState(${3:defaultValue});"
+		],
+		"description": "useState"
+	},
+	"useReducer": {
+		"prefix": "useReducer",
+		"body": [
+			"const [state, dispatch] = useReducer(${1:reducer}, ${2:defaultValue}, ${3:init});"
+		],
+		"description": "useReducer"
+	},
+	"useContext": {
+		"prefix": "useContext",
+		"body": ["const ${1:value} = useContext(${2:context});"],
+		"description": "useContext"
+	},
+	"useRef": {
+		"prefix": "useRef",
+		"body": ["const ${1:refName} = useRef(${3:defaultValue});"],
+		"description": "useRef"
+	},
+	"useImperativeHandle": {
+		"prefix": "useImperativeHandle",
+		"body": [
+			"useImperativeHandle(${1:refName}, () => ({",
+			"\t${2:handles}",
+			"}), [${3:dependencies}]);"
+		],
+		"description": "useImperativeHandle"
+	},
+	"useEffect": {
+		"prefix": "useEffect",
+		"body": [
+			"useEffect(() => {",
+			"\t${1:effect}",
+			"\treturn () => {",
+			"\t\t${2:clear effect}",
+			"\t}",
+			"}, [${3:dependencies}]);"
+		],
+		"description": "useState"
+	},
+	"useLayoutEffect": {
+		"prefix": "useLayoutEffect",
+		"body": [
+			"useLayoutEffect(() => {",
+			"\t${1:effect}",
+			"\treturn () => {",
+			"\t\t${2:clear effect}",
+			"\t}",
+			"}, [${3:dependencies}]);"
+		],
+		"description": "useLayoutEffect"
+	},
+	"useCallback": {
+		"prefix": "useCallback",
+		"body": [
+			"const ${1:functionName} = useCallback(() => {",
+			"\t${2:callback}",
+			"}, [${3:dependencies}]);"
+		],
+		"description": "useCallback"
+	},
+	"useMemo": {
+		"prefix": "useMemo",
+		"body": [
+			"const ${1:memoName} = useMemo(() => ${2:ReactNodeName}, [${3:dependencies}]);"
+		],
+		"description": "useMemo"
+	},
+	"useDebugValue": {
+		"prefix": "useDebugValue",
+		"body": ["useDebugValue(${1:value});"],
+		"description": "useDebugValue"
+	}
 }
